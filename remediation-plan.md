@@ -23,3 +23,30 @@ This plan fixes the 12 gaps found in the ISO 27001 gap analysis. All data comes 
 
 - Owners and dates are proposals for this lab exercise, not real commitments.
 - IT Admin owns most actions because most gaps are technical. Overlapping work is staggered where possible, and a real rollout may need extra help.
+
+## Rollout Timeline
+
+```mermaid
+gantt
+    title CargoLink Remediation Rollout
+    dateFormat YYYY-MM-DD
+    axisFormat %b %d
+
+    section High Priority
+    A.8.24 Encryption             :h1, 2026-10-19, 2026-11-06
+    A.5.24 Incident response plan :h2, 2026-10-19, 2026-10-30
+    A.5.30 Continuity plan        :h3, 2026-11-02, 2026-11-20
+    A.8.8 Patching schedule       :h4, 2026-10-26, 2026-11-13
+    A.8.15 Logging                :h5, 2026-10-26, 2026-11-13
+
+    section Medium Priority
+    A.5.15 Access rules           :m1, 2026-11-02, 2026-11-13
+    A.7.10 Backup drive security  :m2, 2026-10-19, 2026-10-23
+    A.8.13 Backup and restore     :m3, 2026-10-26, 2026-11-06
+    A.8.5 Multi-factor login      :m4, 2026-11-09, 2026-11-27
+    A.6.3 Staff training          :m5, 2026-11-16, 2026-11-27
+
+    section Low Priority
+    A.8.2 Separate admin accounts :l1, 2026-11-02, 2026-11-13
+    A.8.20 Network segmentation   :l2, 2026-11-16, 2026-12-04
+```
